@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "alphabet_entries",
+  "info": {
+    "singularName": "alphabet-entry",
+    "pluralName": "alphabet-entries",
+    "displayName": "alphabet-entry",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Perkataan": {
+      "type": "string"
+    },
+    "Word": {
+      "type": "string"
+    },
+    "KumpulanKategori": {
+      "type": "string"
+    },
+    "GroupCategory": {
+      "type": "string"
+    },
+    "Tag": {
+      "type": "string"
+    },
+    "Order": {
+      "type": "string"
+    },
+    "New": {
+      "type": "boolean"
+    },
+    "SOTD": {
+      "type": "boolean"
+    },
+    "Video": {
+      "type": "string"
+    },
+    "ImageStatus": {
+      "type": "string"
+    },
+    "VideoStatus": {
+      "type": "string"
+    },
+    "Release": {
+      "type": "string"
+    },
+    "Remark": {
+      "type": "string"
+    }
+  }
+}
