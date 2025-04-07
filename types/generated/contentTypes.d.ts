@@ -394,13 +394,13 @@ export interface ApiAlphabetEntryAlphabetEntry
       'api::alphabet-entry.alphabet-entry'
     > &
       Schema.Attribute.Private;
-    New: Schema.Attribute.Boolean;
+    New: Schema.Attribute.String;
     Order: Schema.Attribute.String;
     Perkataan: Schema.Attribute.String;
     publishedAt: Schema.Attribute.DateTime;
     Release: Schema.Attribute.String;
     Remark: Schema.Attribute.String;
-    SOTD: Schema.Attribute.Boolean;
+    SOTD: Schema.Attribute.String;
     Tag: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

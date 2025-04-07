@@ -29,12 +29,6 @@
     "Order": {
       "type": "string"
     },
-    "New": {
-      "type": "boolean"
-    },
-    "SOTD": {
-      "type": "boolean"
-    },
     "Video": {
       "type": "string"
     },
@@ -48,6 +42,12 @@
       "type": "string"
     },
     "Remark": {
+      "type": "string"
+    },
+    "New": {
+      "type": "string"
+    },
+    "SOTD": {
       "type": "string"
     }
   }
