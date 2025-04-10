@@ -401,6 +401,7 @@ export interface ApiAlphabetEntryAlphabetEntry
     Release: Schema.Attribute.String;
     Remark: Schema.Attribute.String;
     SOTD: Schema.Attribute.String;
+    Url: Schema.Attribute.String;
     Tag: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
