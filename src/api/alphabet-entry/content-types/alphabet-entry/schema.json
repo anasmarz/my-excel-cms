@@ -49,6 +49,9 @@
     },
     "SOTD": {
       "type": "string"
+    },
+    "Url": {
+      "type": "string"
     }
   }
 }
