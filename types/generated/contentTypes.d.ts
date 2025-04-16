@@ -369,12 +369,10 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiAlphabetEntryAlphabetEntry
-  extends Struct.CollectionTypeSchema {
-  collectionName: 'alphabet_entries';
+export interface ApiCategoryGroupCategoryGroup extends Struct.CollectionTypeSchema {
+  collectionName: 'category_groups';
   info: {
-    description: '';
-    displayName: 'alphabet-entry';
+    displayName: 'Category Group';
     pluralName: 'alphabet-entries';
     singularName: 'alphabet-entry';
   };
