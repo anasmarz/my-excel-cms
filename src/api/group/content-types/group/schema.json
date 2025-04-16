@@ -1,11 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "category_groups",
+  "collectionName": "groups",
   "info": {
-    "singularName": "category-group",
-    "pluralName": "category-groups",
-    "displayName": "Category Group",
-    "description": "Grouping categories for alphabet entries"
+    "singularName": "group",
+    "pluralName": "groups",
+    "displayName": "Group",
+    "description": "Category grouping information"
   },
   "options": {
     "draftAndPublish": true
@@ -22,12 +22,11 @@
     "Remark": {
       "type": "text"
     },
-    
-    "AlphabetEntries": {
+    "bim_entries": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::alphabet-entry.alphabet-entry",
-      "mappedBy": "CategoryGroup"
+      "mappedBy": "Group"
     }
   }
 }

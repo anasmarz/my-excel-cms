@@ -4,7 +4,7 @@
   "info": {
     "singularName": "alphabet-entry",
     "pluralName": "alphabet-entries",
-    "displayName": "alphabet-entry",
+    "displayName": "BIM",
     "description": ""
   },
   "options": {
@@ -17,10 +17,19 @@
     "Word": {
       "type": "string"
     },
-    "KumpulanKategori": {
+    "Group": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::group.group",
+      "inversedBy": "bim_entries"
+    },
+    "Kumpulan": {
       "type": "string"
     },
-    "GroupCategory": {
+    "Kategori": {
+      "type": "string"
+    },
+    "Category": {
       "type": "string"
     },
     "Tag": {
@@ -29,13 +38,22 @@
     "Order": {
       "type": "string"
     },
+    "New": {
+      "type": "string"
+    },
+    "SOTD": {
+      "type": "string"
+    },
+    "Unnamed_12": {
+      "type": "string"
+    },
     "Video": {
       "type": "string"
     },
-    "ImageStatus": {
+    "Image_Status": {
       "type": "string"
     },
-    "VideoStatus": {
+    "Video_Status": {
       "type": "string"
     },
     "Release": {
@@ -43,24 +61,6 @@
     },
     "Remark": {
       "type": "string"
-    },
-    "New": {
-      "type": "string"
-    },
-    "SOTD": {
-      "type": "string"
-    },
-    "Url": {
-      "type": "string"
-    },
-    "CategoryGroup": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::category-group.category-group",
-      "inversedBy": "AlphabetEntries",  // This must match the relation name in category-group
-      "mappedBy": "CategoryGroup"  // Add this line
-    },
-    // Remove these fields:
-    // "KumpulanKategori", "GroupCategory", "Remark"
+    }
   }
 }
