@@ -21,6 +21,13 @@
     },
     "Remark": {
       "type": "text"
+    },
+    // Add this new relation
+    "AlphabetEntries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::alphabet-entry.alphabet-entry",
+      "mappedBy": "CategoryGroup"
     }
   }
 }

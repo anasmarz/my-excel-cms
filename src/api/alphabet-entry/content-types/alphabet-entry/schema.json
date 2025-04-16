@@ -57,9 +57,10 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::category-group.category-group",
-      "inversedBy": "AlphabetEntries"
+      "inversedBy": "AlphabetEntries",  // This must match the relation name in category-group
+      "mappedBy": "CategoryGroup"  // Add this line
     },
-    // Remove these existing fields:
+    // Remove these fields:
     // "KumpulanKategori", "GroupCategory", "Remark"
   }
 }
